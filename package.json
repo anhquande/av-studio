@@ -1,0 +1,21 @@
+{
+  "name": "av-studio",
+  "version": "1.0.0",
+  "description": "Video Audio Image Editor using ffmpeg and imagemagick",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Anh Quan Nguyen info@anhquan.de",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "fs": "0.0.1-security",
+    "moment": "^2.15.0",
+    "moment-duration-format": "^1.3.0",
+    "pkginfo": "^0.4.0",
+    "shelljs": "^0.7.4",
+    "sprintf-js": "^1.0.3",
+    "string": "^3.3.1",
+    "string.prototype.startswith": "^0.2.0"
+  }
+}
