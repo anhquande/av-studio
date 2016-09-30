@@ -56,4 +56,32 @@ av-studio is a command-line utility to manipulate audios, videos and images usin
 ## Examples
 1. Create a **slideshow** from *15* images in the folder *C:\My Documents\My Pictures*, each image appears in 10 seconds
 
-        av slideshow myimages -c 15 -d 10
+        av slideshow "C:\My Documents\My Pictures" -c 15 -d 10
+
+2. Add logo to video
+
+        av logo mylogo.png myvideo.mp4 -o myvideo_with_logo.mp4
+
+3. Create a Picture-in-Picture video
+        
+        av pip background.mp4 myvideo.mp4 -o product.mp4
+
+4. Burn subtitle
+   
+        av subtitle myvideo.mp4 mysutitle.srt 
+
+5. Trim 5 seconds from beginning of a video
+
+        av trim myvideo.mp4 -b 0 -e 00:00:05 -o mytrimvideo.mp4
+
+6. Trim a video from 00:01:00 until the end
+
+        av trim myvideo.mp4 -b 00:01:00 -o mytrimvideo.mp4
+
+7. Resize image
+
+        av imageresize myphoto.jpg -s "1024x768"
+
+8. Join 3 videos into one
+
+        av join open.mp4 main.mp4 end.mp4 -o final.mp4
